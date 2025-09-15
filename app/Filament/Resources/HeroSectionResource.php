@@ -10,12 +10,13 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile; // Add this import
 
 class HeroSectionResource extends Resource
 {
     protected static ?string $model = HeroSection::class;
     protected static ?string $navigationIcon = 'heroicon-o-camera';
-    protected static ?string $navigationGroup = 'Content Management';
+    protected static ?string $navigationGroup = 'Home Page';
     protected static ?int $navigationSort = 1;
 
     public static function form(Form $form): Form
